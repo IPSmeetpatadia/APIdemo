@@ -11,14 +11,14 @@ import java.io.InputStreamReader
 import java.net.HttpURLConnection
 import java.net.URL
 
-class MainActivity : AppCompatActivity(), AdapterView.OnItemClickListener, AdapterView.OnItemSelectedListener {
+class HoroscopeActivity : AppCompatActivity(), AdapterView.OnItemClickListener, AdapterView.OnItemSelectedListener {
 
     var sunSign = "-- Select Your Sign--"
     var resultView: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_horoscope)
 
         var btn: Button = findViewById(R.id.btn_getHoroscope)
         btn.setOnClickListener {

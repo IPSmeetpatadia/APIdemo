@@ -13,4 +13,15 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="ThemeOverlay.AppCompat.navTheme">
+
+        <!-- Color of text and icon when SELECTED -->
+        <item name="colorPrimary">#FF5722</item>
+
+        <!-- Background color when SELECTED -->
+        <item name="colorControlHighlight">#acb132</item>
+
+    </style>
+
 </resources>
