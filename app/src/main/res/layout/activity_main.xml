@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/spinner_sunSign"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/btn_getHoroscope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horoscope"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="309dp"
+        android:layout_height="417dp"
+        android:foregroundGravity="fill_horizontal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:visibility="visible"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
