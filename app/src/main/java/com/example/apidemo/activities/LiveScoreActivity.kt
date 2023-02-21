@@ -3,6 +3,7 @@ package com.example.apidemo.activities
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.apidemo.R
 import com.example.apidemo.adapters.RetrofitAdapter
 import com.example.apidemo.dataclasses.LiveScoreDataClass
 import com.example.apidemo.interfaces.LiveScoreInterface
