@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:elevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txt_retrofit_userID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_retrofit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sunt aut facere repellat provident occaecati excepturi optio reprehenderit"
+            android:justificationMode="inter_word"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -3,10 +3,13 @@ package com.example.apidemo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.apidemo.adapters.RetrofitAdapter
 import com.example.apidemo.dataclasses.RetrofitDataClassItem
 import com.example.apidemo.interfaces.RetrofitInterface
+import kotlinx.android.synthetic.main.activity_retrofit_apiactivity.*
 import retrofit2.Call
+import retrofit2.CallAdapter
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
@@ -16,9 +19,15 @@ const val BASE_URL = "https://jsonplaceholder.typicode.com/"
 
 class RetrofitAPIActivity : AppCompatActivity() {
 
+    lateinit var retrofitAdapter: RetrofitAdapter
+    lateinit var linearLayoutManager: LinearLayoutManager
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_retrofit_apiactivity)
+
+        linearLayoutManager = LinearLayoutManager(this)
+        recyclerView.layoutManager = linearLayoutManager
 
         getMyData()
 
@@ -37,12 +46,21 @@ class RetrofitAPIActivity : AppCompatActivity() {
             override fun onResponse(call: Call<List<RetrofitDataClassItem>?>, response: Response<List<RetrofitDataClassItem>?>) {
                 val responseBody = response.body()!!
 
+                retrofitAdapter = RetrofitAdapter(baseContext, responseBody)
+                retrofitAdapter.notifyDataSetChanged()
+
+                recyclerView.adapter = retrofitAdapter
+
+                /*
+                //setting coming data into textview
+
                 val stringBuilder = StringBuilder()
                 for (myData in responseBody){
                     stringBuilder.append(myData.title)
                     stringBuilder.append("\n\n")
                 }
-                findViewById<TextView>(R.id.txtRetroDataDisplay).text = stringBuilder
+                txtRetroDataDisplay.text = stringBuilder
+                */
             }
 
             override fun onFailure(call: Call<List<RetrofitDataClassItem>?>, t: Throwable) {
@@ -50,4 +68,5 @@ class RetrofitAPIActivity : AppCompatActivity() {
             }
         })
     }
+
 }
