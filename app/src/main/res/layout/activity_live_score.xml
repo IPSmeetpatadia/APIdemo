@@ -4,20 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RetrofitAPIActivity"
+    tools:context=".LiveScoreActivity"
     android:orientation="vertical"
     android:gravity="center">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView_retrofit"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
-    <!--
     <TextView
-        android:id="@+id/txtRetroDataDisplay"
+        android:id="@+id/txtLive1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-     -->
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtLive2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
 
 </LinearLayout>

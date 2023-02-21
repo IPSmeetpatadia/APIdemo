@@ -9,7 +9,6 @@ import com.example.apidemo.dataclasses.RetrofitDataClassItem
 import com.example.apidemo.interfaces.RetrofitInterface
 import kotlinx.android.synthetic.main.activity_retrofit_apiactivity.*
 import retrofit2.Call
-import retrofit2.CallAdapter
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
@@ -27,7 +26,7 @@ class RetrofitAPIActivity : AppCompatActivity() {
         setContentView(R.layout.activity_retrofit_apiactivity)
 
         linearLayoutManager = LinearLayoutManager(this)
-        recyclerView.layoutManager = linearLayoutManager
+        recyclerView_retrofit.layoutManager = linearLayoutManager
 
         getMyData()
 
@@ -49,7 +48,7 @@ class RetrofitAPIActivity : AppCompatActivity() {
                 retrofitAdapter = RetrofitAdapter(baseContext, responseBody)
                 retrofitAdapter.notifyDataSetChanged()
 
-                recyclerView.adapter = retrofitAdapter
+                recyclerView_retrofit.adapter = retrofitAdapter
 
                 /*
                 //setting coming data into textview
