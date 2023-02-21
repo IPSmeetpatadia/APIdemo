@@ -1,9 +1,10 @@
-package com.example.apidemo
+package com.example.apidemo.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import com.example.apidemo.R
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
 import org.json.JSONObject
@@ -28,7 +29,7 @@ class HoroscopeActivity : AppCompatActivity(), AdapterView.OnItemClickListener, 
         }
 
         val spinner = findViewById<Spinner>(R.id.spinner_sunSign)
-        val adapter = ArrayAdapter.createFromResource(this,R.array.sunSign,android.R.layout.simple_spinner_item)
+        val adapter = ArrayAdapter.createFromResource(this, R.array.sunSign,android.R.layout.simple_spinner_item)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter = adapter;
         spinner.onItemSelectedListener = this

@@ -17,7 +17,7 @@
             android:name=".RetrofitAPIActivity"
             android:exported="false" />
         <activity
-            android:name=".HoroscopeActivity"
+            android:name=".activities.HoroscopeActivity"
             android:exported="false" />
         <activity
             android:name=".LiveScoreActivity"
