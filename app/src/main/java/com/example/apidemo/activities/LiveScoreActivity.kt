@@ -34,10 +34,6 @@ class LiveScoreActivity : AppCompatActivity() {
         liveData.enqueue(object : Callback<LiveScoreDataClass> {
             override fun onResponse(call: Call<LiveScoreDataClass>, response: Response<LiveScoreDataClass>) {
                 val responseBody = response.body()!!
-
-                /*val stringBuilder = StringBuilder()
-                stringBuilder.append(responseBody.Eid)*/
-
                 txtLive1.text = responseBody.toString()
             }
 
