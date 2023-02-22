@@ -14,13 +14,13 @@
         android:theme="@style/Theme.APIdemo"
         tools:targetApi="31">
         <activity
-            android:name=".activities.RetrofitAPIActivity"
-            android:exported="false" />
-        <activity
             android:name=".activities.HoroscopeActivity"
             android:exported="false" />
         <activity
             android:name=".activities.LiveScoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.RetrofitAPIActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

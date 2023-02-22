@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import com.example.apidemo.R
 import com.example.apidemo.dataclasses.LiveScoreDataClass
+import com.example.apidemo.dataclasses.Ref
 import com.example.apidemo.interfaces.LiveScoreInterface
 import kotlinx.android.synthetic.main.activity_live_score.*
 import retrofit2.Call
@@ -34,7 +35,22 @@ class LiveScoreActivity : AppCompatActivity() {
         liveData.enqueue(object : Callback<LiveScoreDataClass> {
             override fun onResponse(call: Call<LiveScoreDataClass>, response: Response<LiveScoreDataClass>) {
                 val responseBody = response.body()!!
-                txtLive1.text = responseBody.toString()
+
+                var stringBuilder = StringBuilder()
+                stringBuilder.append(responseBody.Eid)
+                stringBuilder.append("\n")
+                stringBuilder.append(responseBody.Esd)
+                stringBuilder.append("\n")
+                stringBuilder.append(responseBody.Vneut)
+                stringBuilder.append("\n")
+                stringBuilder.append(responseBody.Vsp)
+                stringBuilder.append("\n")
+                stringBuilder.append(responseBody.Vnm)
+                txtLive1.setOnClickListener {
+                    txtLive2.text = responseBody.Refs.toString()
+                }
+
+                txtLive1.text = stringBuilder
             }
 
             override fun onFailure(call: Call<LiveScoreDataClass>, t: Throwable) {
