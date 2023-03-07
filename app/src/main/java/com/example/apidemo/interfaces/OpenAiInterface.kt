@@ -2,9 +2,11 @@ package com.example.apidemo.interfaces
 
 import com.example.apidemo.dataclasses.OpenAiDataClass
 import com.example.apidemo.modelclass.OpenAiModelClass
+import com.google.gson.JsonObject
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.Header
+import retrofit2.http.Headers
 import retrofit2.http.POST
 
 /*
@@ -13,16 +15,18 @@ import retrofit2.http.POST
 
 interface OpenAiInterface {
 
+    @Headers(
+        "Content-Type: application/json",
+//        "Authorization: Bearer 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"
+    )
+
     @POST("completions")
     fun postQuery(
-        @Header("Content-Type") type: String,
-        @Header("Authorization") token: String,
-        @Body openAiModelClass: OpenAiModelClass
-    ): Call<List<OpenAiDataClass>>
+        @Body openAiModelClass: JsonObject,
+        @Header("Authorization") token: String
+    ): Call<OpenAiDataClass>
 
 }
-
-
 
 /*
 
