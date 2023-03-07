@@ -30,7 +30,6 @@ class RetrofitAPIActivity : AppCompatActivity() {
         recyclerView_retrofit.layoutManager = linearLayoutManager
 
         getMyData()
-
     }
 
     private fun getMyData() {
