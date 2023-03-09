@@ -9,7 +9,7 @@ import retrofit2.http.POST
 
 interface TranslationInterface {
 
-    @FormUrlEncoded
+    @FormUrlEncoded         //  Denotes that the request body will use form URL encoding. Fields should be declared as parameters and annotated with @Field.
     @POST("translate")
     fun getTranslatedText(
         @Field("to") to: String,

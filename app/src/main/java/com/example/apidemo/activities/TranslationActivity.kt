@@ -55,7 +55,8 @@ class TranslationActivity : AppCompatActivity() {
         "Chinese Hong Kong" to "zh-hk",
         "Chinese Singapore" to "zh-sg",
         "English" to "en",
-        "Hindi" to "hi"
+        "Hindi" to "hi",
+        "Gujarati" to "gu"
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
