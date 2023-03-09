@@ -95,21 +95,21 @@ class OpenAiActivity : AppCompatActivity() {
                 val result = quoteService. //no need to write page: it will show by compiler
                 if (result.body() != null){*/
 
-
-                    quoteService.postQuery(json,"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")
-                .enqueue(object : Callback<OpenAiDataClass> {
-                    override fun onResponse(call: Call<OpenAiDataClass>, response: Response<OpenAiDataClass>) {
-                        Log.d("URL", response.toString())
-
-                        val responseBody = response.body()!!
-                        Log.d("Response body", responseBody.toString())
-//                        textView.text = responseBody[0].choices[0].text
-                    }
-
-                    override fun onFailure(call: Call<OpenAiDataClass>, t: Throwable) {
-                        Log.d("RESPONSE FAIL", t.message.toString())
-                    }
-                })
+//
+//                    quoteService.postQuery(json,"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")
+//                .enqueue(object : Callback<OpenAiDataClass> {
+//                    override fun onResponse(call: Call<OpenAiDataClass>, response: Response<OpenAiDataClass>) {
+//                        Log.d("URL", response.toString())
+//
+//                        val responseBody = response.body()!!
+//                        Log.d("Response body", responseBody.toString())
+////                        textView.text = responseBody[0].choices[0].text
+//                    }
+//
+//                    override fun onFailure(call: Call<OpenAiDataClass>, t: Throwable) {
+//                        Log.d("RESPONSE FAIL", t.message.toString())
+//                    }
+//                })
 
         }
 
