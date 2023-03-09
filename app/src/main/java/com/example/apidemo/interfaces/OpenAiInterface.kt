@@ -1,7 +1,6 @@
 package com.example.apidemo.interfaces
 
-import com.example.apidemo.dataclasses.OpenAiDataClass
-import com.example.apidemo.modelclass.OpenAiModelClass
+import com.example.apidemo.dataclasses.openai.OpenAiDataClass
 import com.google.gson.JsonObject
 import retrofit2.Call
 import retrofit2.http.Body

@@ -1,4 +1,6 @@
-package com.example.apidemo.dataclasses
+package com.example.apidemo.dataclasses.livescore
+
+import com.example.apidemo.dataclasses.livescore.Ref
 
 data class LiveScoreDataClass(
     val Eid: String,

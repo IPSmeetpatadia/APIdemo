@@ -1,6 +1,6 @@
 package com.example.apidemo.interfaces
 
-import com.example.apidemo.dataclasses.LiveScoreDataClass
+import com.example.apidemo.dataclasses.livescore.LiveScoreDataClass
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Header

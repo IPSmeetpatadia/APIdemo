@@ -11,8 +11,9 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:boxCornerRadiusTopEnd="15dp"
-        app:boxCornerRadiusTopStart="15dp">
+        app:boxCornerRadiusTopEnd="6dp"
+        app:boxCornerRadiusTopStart="6dp"
+        app:boxBackgroundColor="#0A000000">
 
         <EditText
             android:id="@+id/edtxt_empName"
@@ -26,9 +27,10 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:boxCornerRadiusTopEnd="15dp"
-        app:boxCornerRadiusTopStart="15dp"
-        android:layout_marginTop="10dp">
+        app:boxCornerRadiusTopEnd="6dp"
+        app:boxCornerRadiusTopStart="6dp"
+        android:layout_marginTop="10dp"
+        app:boxBackgroundColor="#0A000000">
 
         <EditText
             android:id="@+id/edtxt_empID"
@@ -42,9 +44,10 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:boxCornerRadiusTopEnd="15dp"
-        app:boxCornerRadiusTopStart="15dp"
-        android:layout_marginTop="10dp">
+        app:boxCornerRadiusTopEnd="6dp"
+        app:boxCornerRadiusTopStart="6dp"
+        android:layout_marginTop="10dp"
+        app:boxBackgroundColor="#0A000000">
 
         <EditText
             android:id="@+id/edtxt_empDesignation"
@@ -67,6 +70,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp">
+
+
 
         <TextView
             android:id="@+id/txt_boomerangResponse"

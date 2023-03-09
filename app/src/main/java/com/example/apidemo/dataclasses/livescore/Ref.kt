@@ -1,4 +1,4 @@
-package com.example.apidemo.dataclasses
+package com.example.apidemo.dataclasses.livescore
 
 data class Ref(
     val Cid: String,

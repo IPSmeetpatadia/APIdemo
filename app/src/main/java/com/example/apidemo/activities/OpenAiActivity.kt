@@ -7,7 +7,7 @@ import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.TextView
 import com.example.apidemo.R
-import com.example.apidemo.dataclasses.OpenAiDataClass
+import com.example.apidemo.dataclasses.openai.OpenAiDataClass
 import com.example.apidemo.interfaces.OpenAiInterface
 import com.example.apidemo.objects.RetrofitHelper
 import com.example.apidemo.modelclass.OpenAiModelClass

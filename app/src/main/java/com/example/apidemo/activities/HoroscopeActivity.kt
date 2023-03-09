@@ -82,10 +82,7 @@ class HoroscopeActivity : AppCompatActivity(), AdapterView.OnItemClickListener, 
             // set host name
             connection.setRequestProperty("x-rapidapi-host", "sameer-kumar-aztro-v1.p.rapidapi.com")
             // set the rapid-api key
-            connection.setRequestProperty(
-                "x-rapidapi-key",
-                "83e0bb9359mshf23a5e69a002769p129d96jsn8ed0c455bfcf"
-            )
+            connection.setRequestProperty("x-rapidapi-key","83e0bb9359mshf23a5e69a002769p129d96jsn8ed0c455bfcf")
             connection.setRequestProperty("content-type", "application/x-www-form-urlencoded")
             // set the request method
             connection.requestMethod = "POST"
