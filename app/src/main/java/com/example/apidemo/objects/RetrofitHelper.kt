@@ -1,4 +1,4 @@
-package com.example.apidemo.interfaces
+package com.example.apidemo.objects
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

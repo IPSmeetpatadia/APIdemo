@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TranslationActivity"
+    android:padding="15dp">
+
+    <Spinner
+        android:id="@+id/spinner_fromLanguage"
+        android:layout_alignStart="@id/txt_fromLanguage"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txt_fromLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="English"
+        android:textStyle="bold"
+        android:layout_below="@id/spinner_fromLanguage"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edtxt_from"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_fromLanguage"/>
+
+    <Spinner
+        android:id="@+id/spinner_toLanguage"
+        android:layout_alignStart="@id/txt_toLanguage"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txt_toLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hindi"
+        android:textStyle="bold"
+        android:layout_alignStart="@id/edtxt_to"
+        android:layout_below="@id/spinner_toLanguage"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edtxt_to"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txt_toLanguage"/>
+
+    <Button
+        android:id="@+id/btn_translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="translate"
+        android:layout_below="@id/edtxt_to"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+</RelativeLayout>

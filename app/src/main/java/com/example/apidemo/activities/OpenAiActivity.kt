@@ -1,6 +1,5 @@
 package com.example.apidemo.activities
 
-import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -10,20 +9,14 @@ import android.widget.TextView
 import com.example.apidemo.R
 import com.example.apidemo.dataclasses.OpenAiDataClass
 import com.example.apidemo.interfaces.OpenAiInterface
-import com.example.apidemo.interfaces.RetrofitHelper
+import com.example.apidemo.objects.RetrofitHelper
 import com.example.apidemo.modelclass.OpenAiModelClass
 import com.google.gson.Gson
 import com.google.gson.JsonObject
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
-import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 
 /*
                           INCOMPLETE
@@ -32,7 +25,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 class OpenAiActivity : AppCompatActivity() {
 
     lateinit var modelClass: OpenAiModelClass
-
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_open_ai)
