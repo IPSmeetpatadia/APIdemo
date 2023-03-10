@@ -14,7 +14,7 @@
         android:elevation="2dp"
         android:layout_above="@id/edtxt_query_OpenAI">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:textStyle="italic"/>
 
-    </LinearLayout>
+    </ScrollView>
 
     </androidx.cardview.widget.CardView>
 

@@ -1,9 +1,5 @@
 package com.example.apidemo.dataclasses.openai
 
-/*
-                          INCOMPLETE
-*/
-
 data class OpenAiDataClass(
     val choices: List<Choice>,
     val created: Int,
