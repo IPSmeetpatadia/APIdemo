@@ -18,13 +18,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="10dp"
-        android:gravity="bottom">
+        android:background="#0D2196F3"
+        android:padding="10dp">
 
         <TextView
             android:id="@+id/txt_ai_response"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
             android:textStyle="italic"/>
 
     </ScrollView>
@@ -35,15 +36,18 @@
         android:id="@+id/edtxt_query_OpenAI"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your query"
-        android:background="#2AE30E0E"
-        android:padding="5dp"
-        android:defaultFocusHighlightEnabled="true"
-        android:textColorHighlight="#DC0F00"
         android:layout_alignParentBottom="true"
-        android:layout_margin="5dp"
-        android:textSize="21sp"
-        android:layout_toLeftOf="@id/btn_send"/>
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@id/btn_send"
+        android:background="#0FE30E0E"
+        android:defaultFocusHighlightEnabled="true"
+        android:hint="Enter your query"
+        android:padding="5dp"
+        android:textColorHighlight="#DC0F00"
+        android:textSize="21sp" />
 
     <ImageButton
         android:id="@+id/btn_send"

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UserDetailsActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/empD_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+    <TextView
+        android:id="@+id/empD_fullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <!-- ABOUT -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About:"
+            android:textStyle="bold"/>
+
+        <TableLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- age -->
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="#1112c21f">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:text="Age:"
+                    android:layout_column="1"/>
+                <TextView
+                    android:id="@+id/empD_age"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"/>
+            </TableRow>
+
+            <!-- gender -->
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="#11FF9800">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:text="Gender:"
+                    android:layout_column="1"/>
+                <TextView
+                    android:id="@+id/empD_gender"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"/>
+            </TableRow>
+
+            <!-- dob -->
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:background="#1112c21f">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="DoB:"
+                    android:layout_column="1"/>
+                <TextView
+                    android:id="@+id/empD_dob"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"/>
+            </TableRow>
+
+            <!-- blood group -->
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="#11FF9800">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:text="Blood Group:"
+                    android:layout_column="1"/>
+                <TextView
+                    android:id="@+id/empD_bloodGroup"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+    <!-- CONTACT -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact:"
+            android:textStyle="bold"/>
+
+        <TableLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- email -->
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="#1112c21f">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:text="Email:"
+                    android:layout_column="1"/>
+                <TextView
+                    android:id="@+id/empD_email"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"/>
+            </TableRow>
+
+            <!-- contact number -->
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:background="#11FF9800">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Contact:"
+                    android:layout_column="1"/>
+                <TextView
+                    android:id="@+id/empD_contactNo"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"/>
+            </TableRow>
+
+            <!-- address -->
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="#1112c21f">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:text="Address:"
+                    android:layout_column="1"/>
+                <TextView
+                    android:id="@+id/empD_address"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+    <!-- COMPANY PROFILE -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company Profile:"
+            android:textStyle="bold"/>
+
+        <TableLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- name -->
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="#1112c21f">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:text="Name:"
+                    android:layout_column="1"/>
+                <TextView
+                    android:id="@+id/empD_cname"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"/>
+            </TableRow>
+
+            <!-- department -->
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="#11FF9800">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:text="Contact:"
+                    android:layout_column="1"/>
+                <TextView
+                    android:id="@+id/empD_department"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"/>
+            </TableRow>
+
+            <!-- address -->
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="#1112c21f">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:text="Title:"
+                    android:layout_column="1"/>
+                <TextView
+                    android:id="@+id/empD_title"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

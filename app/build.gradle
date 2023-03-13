@@ -52,6 +52,10 @@ dependencies {
     //synthetic binding
     apply plugin: 'kotlin-android-extensions'
 
-//    //justify text in textview
-//    implementation 'com.github.bluejamesbond:textjustify-android:2.1.6'
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+
+    //interceptor
+    implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
 }

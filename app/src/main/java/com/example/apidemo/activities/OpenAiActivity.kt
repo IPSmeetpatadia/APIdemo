@@ -31,6 +31,7 @@ class OpenAiActivity : AppCompatActivity() {
         val editText: EditText = findViewById(R.id.edtxt_query_OpenAI)
 
         findViewById<ImageButton>(R.id.btn_send).setOnClickListener {
+
              val httpClient = OkHttpClient.Builder()
                  .readTimeout(9, TimeUnit.MINUTES)
                  .build()
@@ -44,9 +45,11 @@ class OpenAiActivity : AppCompatActivity() {
 
             modelClass = OpenAiModelClass("code-davinci-002", prompt = editText.text.toString(), 0, 256, 1, 0, 0)
 
-            urlBuilder.postQuery(modelClass,"Bearer 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")   //  The `token` here is `Bearer` token so we need to add "Bearer" before token-key
+            urlBuilder.postQuery(modelClass,"Bearer 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")   //  The `token` here is `Bearer` token so we need to add "Bearer" before token-key
                 .enqueue(object : Callback<OpenAiDataClass> {
                     override fun onResponse(call: Call<OpenAiDataClass>, response: Response<OpenAiDataClass>) {
+                        Log.d("URL", response.toString())
+
                         val responseBody = response.body()!!
 
                         /*
@@ -63,6 +66,8 @@ class OpenAiActivity : AppCompatActivity() {
                         Log.d("RESPONSE FAIL", t.message.toString())
                     }
                 })
+
         }
+
     }
 }
